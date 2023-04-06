@@ -28,8 +28,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='bereal-portrait.gif' title='Video Walkthrough demonstrating camera use & hidden images before posting' width='200' alt='Video Walkthrough demonstrating camera use & hidden images before posting' />
-<img src='bereal-portrait-pt2.gif' title='Video Walkthrough demonstrating user session persisting & ability to log out' width='200' alt='Video Walkthrough demonstrating user session persisting & ability to log out' />
+<img src='bereal-portrait.gif' title='Video Walkthrough demonstrating camera use & hidden images before posting' width='300' alt='Video Walkthrough demonstrating camera use & hidden images before posting' />
+<img src='bereal-portrait-pt2.gif' title='Video Walkthrough demonstrating user session persisting & ability to log out' width='300' alt='Video Walkthrough demonstrating user session persisting & ability to log out' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LICEcap
@@ -92,7 +92,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='bereal-portrait.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='bereal-portrait.gif' title='Video Walkthrough' width='300' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LICEcap
