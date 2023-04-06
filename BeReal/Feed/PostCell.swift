@@ -18,6 +18,27 @@ class PostCell: UITableViewCell {
     private var imageDataRequest: DataRequest?
     
     func configure(with post: Post) {
+        // A lot of the following returns optional values so we'll unwrap them all together in one big `if let`
+        // Get the current user.
+        if let currentUser = User.current,
+
+            // Get the date the user last shared a post (cast to Date).
+           let lastPostedDate = currentUser.lastPostedDate,
+
+            // Get the date the given post was created.
+           let postCreatedDate = post.createdAt,
+
+            // Get the difference in hours between when the given post was created and the current user last posted.
+           let diffHours = Calendar.current.dateComponents([.hour], from: postCreatedDate, to: lastPostedDate).hour {
+
+            // Hide the image view if the given post was created within 24 hours of the current user's last post. (before or after)
+            postImageView.isHidden = abs(diffHours) > 24
+        } else {
+
+            // Default to blur if we can't get or compute the date's above for some reason.
+            postImageView.isHidden = true
+        }
+        
         // Username
         if let user = post.user {
             usernameLabel.text = user.username
